@@ -1,0 +1,56 @@
+* {
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191a1a;
+    position: relative; /* Add this line */
+}
+
+
+.container {
+    background-color: #202222;
+    border: 2px solid #2b2c2d;
+    border-radius: 10px;
+    padding: 30px;
+    top: -30px;
+    text-align: center;
+    width: 500px; /* Adjust the width as needed */
+    position: relative; /* Ensure container is above the waves */
+    z-index: 1; /* Bring container above SVG */
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+p {
+    color: #ccc; /* Light gray for better readability */
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+.button {
+    font-size: 16px;
+    background-color: #4951FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #2f35a5; /* Slightly darker on hover */
+}

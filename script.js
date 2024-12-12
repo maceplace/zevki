@@ -1,6 +1,5 @@
 // Variables
 let hash = window.location.hash;
-let goto = window.location;
 
 // Redirect
 switch (hash) {

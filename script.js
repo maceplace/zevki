@@ -5,15 +5,15 @@ let hash = window.location.hash;
 switch (hash) {
   // Website
   case '#md':
-    goto.replace("https://macestudios.ru");
+    window.location.replace("https://macestudios.ru");
     break;
   // YouTube
   case '#yt':
-    goto.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
+    window.location.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
     break;
   // VK
   case '#vk':
-    goto.replace("https://vk.com/macedev");
+    window.location.replace("https://vk.com/macedev");
     break;
   // No redirect
   default:

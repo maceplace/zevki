@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mace Dev</title>
+    <title>Mace Dev - Hub</title>
     <meta name="description" content="MaceDev's link shortener">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" href="https://macestudios.ru/assets/logo/IconWeb.png" type="image/png">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="style.css" rel="stylesheet">
 
     <script src="script.js"></script>
@@ -17,13 +18,28 @@
 
 <body>
 
-    <div class="container">
-        <h1>Mace Dev</h1>
-        <p>Zevki.ru is my link shortener</p>
-        <a href="https://macestudios.ru/">
-            <button class="button">Go to my Website</button>
-        </a>
-        <!-- <button class="button" href="https://macestudios.ru/">Button 2</button> -->
+    <div class="window">
+        <div class="window-title">
+            <p class="title">Mace Dev</p>
+            <img class="buttons" src="window-buttons.svg" height="36px"></img>
+        </div>
+
+        <div class="window-content">
+            <button class="link" onclick="window.open('https://macestudios.ru/', '_blank')">
+                <i class="bi bi-globe2"></i>
+                My Website
+            </button>
+
+            <button class="link" onclick="window.open('#yt', '_blank')" style="background-color: #f03;">
+                <i class="bi bi-youtube"></i>
+                YouTube
+            </button>
+
+            <button class="link" onclick="window.open('#vk', '_blank')" style="background-color: #07f;">
+                <img src="https://macestudios.ru/assets/branding/bi-vk.svg" class="custom-icon">
+                VK
+            </button>
+        </div>
     </div>
 
     <img src="waves.svg" alt="Wavy Background" draggable="false" style="position: absolute; bottom: 0; left: 0; width: 100%; height: auto;">

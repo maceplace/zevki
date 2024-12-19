@@ -1,7 +1,7 @@
 :root {
-    --bg-main: #1e1f22;
-    --bg-box: #2b2d31;
-    --bg-border: #3c3e44;
+    --bg-main: #1d1e25;
+    --bg-box: #fff1;
+    --bg-border: #fff1;
 }
 
 
@@ -22,16 +22,40 @@ body {
 }
 
 
-.container {
+.window {
     background-color: var(--bg-box);
     border: 2px solid var(--bg-border);
-    border-radius: 10px;
-    padding: 30px;
-    top: -30px;
+    border-radius: 12px;
+
+    padding: 15px;
     text-align: center;
-    width: 500px; /* Adjust the width as needed */
+
+    width: 640px; /* Adjust the width as needed */
     position: relative; /* Ensure container is above the waves */
-    z-index: 1; /* Bring container above SVG */
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.window-title {
+    /* height: 64px; Fixed height */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+.window-title .title {
+    color: white;
+    font-size: 36px;
+    text-align: left;
+    margin: 0;
+}
+.window-title .buttons {
+    margin: 0;
+}
+
+.window-content {
+    flex-grow: 1; /* Takes up remaining space */
 }
 
 
@@ -47,17 +71,25 @@ p {
 }
 
 
-.button {
-    font-size: 16px;
+button {
+    font-size: 24px;
     background-color: #4951FF;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 10px;
+    padding: 12px 16px;
     cursor: pointer;
+    min-width: 150px;
     margin: 15px; /* Space between buttons */
-    transition: background-color 0.3s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
 }
-.button:hover {
-    background-color: #2f35a5; /* Slightly darker on hover */
+button:hover {
+    /* background-color: #1e1f22; */
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+.custom-icon {
+    border-radius: 0px;
+    height: 1em;
+    vertical-align: -.125em;
 }

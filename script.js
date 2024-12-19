@@ -2,39 +2,53 @@
 let hash = window.location.hash;
 
 // Redirect
-switch (hash) {
-  // MAIN
-  // Website
-  case '#md':
-    window.location.replace("https://macestudios.ru");
 
-  // CONTACT ME
-  // YouTube
-  case '#yt':
-    window.location.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
-  case '#youtube':
-    window.location.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
-  // VKontakte
-  case '#vk':
-    window.location.replace("https://vk.com/macedev");
-  // GitHub
-  case '#github':
-    window.location.replace("https://github.com/maceplace");
-    
+// MAIN
+// Website
+if (hash == '#md') {
+  window.location.replace("https://macestudios.ru");
+}
 
-  // PROJECTS
-  // Website
-  case '#dem':
-    window.location.replace("https://macestudios.ru/mem");
-  case '#tuc':
-    window.location.replace("https://bulava.itch.io/tuc");
+// CONTACT ME
+// YouTube
+if (hash == '#yt') {
+  window.location.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
+}
+else if (hash == '#youtube') {
+  window.location.replace("https://youtube.com/@macedev?si=tfRWVtvo7UA0w1Of");
+}
+// VKontakte
+else if (hash == '#vk') {
+  window.location.replace("https://vk.com/macedev");
+}
+// GitHub
+else if (hash == '#github') {
+  window.location.replace("https://github.com/maceplace");
+}
+// itch.io
+else if (hash == '#itch') {
+  window.location.replace("https://mace-dev.itch.io/");
+}
 
-  // ROFLS
-  // vk labuna
-  case '#sex':
-    window.location.replace("https://vk.com/toxicballoonkid");
+// PROJECTS
+// Website
+else if (hash == '#dem') {
+  window.location.replace("https://macestudios.ru/mem");
+}
+else if (hash == '#tuc') {
+  window.location.replace("https://bulava.itch.io/tuc");
+}
 
-  // NO REDIRECT
-  default:
-    console.log("Can't redirect the " + hash)
+// ROFLS
+// vk labuna
+else if (hash == '#sex') {
+  window.location.replace("https://vk.com/toxicballoonkid");
+}
+else if (hash == '#no') {
+  window.location.replace("https://vk.com/toxicballoonkid");
+}
+
+// NO REDIRECT
+else {
+  console.log("Can't redirect the " + hash)
 }

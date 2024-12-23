@@ -7,18 +7,20 @@
 
 * {
     user-select: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
 }
 
 
 body {
     margin: 0;
     height: 100vh;
+    background-color: var(--bg-main);
+
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: var(--bg-main);
-    position: relative;
 
     /* cursor: url(cursor.svg), auto; */
 }
@@ -48,8 +50,6 @@ body {
     justify-content: space-between; 
 }
 .window-title .title {
-    color: white;
-    font-size: 36px;
     text-align: left;
     margin: 0;
 }
@@ -66,10 +66,10 @@ h1 {
     color: white;
     margin-bottom: 15px;
     font-size: 40px;
+    font-weight: 700;
 }
 p {
     color: #ccc; /* Light gray for better readability */
-    margin-bottom: 20px;
     font-size: 18px;
 }
 
@@ -105,4 +105,9 @@ button:hover {
     left: 0;
     width: 100%;
     height: auto;
+}
+
+
+.ng-timer {
+    margin: 4px;
 }

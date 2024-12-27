@@ -38,6 +38,9 @@ else if (hash == '#dem') {
 else if (hash == '#tuc') {
   window.location.replace("https://bulava.itch.io/tuc");
 }
+else if (hash == '#cards') {
+  window.location.replace("https://macestudios.ru/zevki-cards/");
+}
 
 // ROFLS
 // vk labuna

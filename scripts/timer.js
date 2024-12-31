@@ -44,4 +44,4 @@ var x = setInterval(function() {
     document.getElementById("ng-timer-b").innerHTML = "С новым годом!";
     document.getElementById("ng-timer-c").innerHTML = "";
   }
-}, 1000);
+}, 250);

@@ -48,10 +48,10 @@ else if (hash == '#sex') {
   window.location.replace("https://vk.com/toxicballoonkid");
 }
 else if (hash == '#no') {
-  window.location.replace("https://vk.com/toxicballoonkid");
+  window.location.replace("https://ismycomputeronfire.com/");
 }
 
 // NO REDIRECT
 else {
-  console.log("Can't redirect the " + hash)
+  console.log("ERROR: Can't redirect the " + hash)
 }

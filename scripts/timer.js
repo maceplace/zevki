@@ -18,8 +18,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("ng-timer-a").innerHTML = "До нового года осталось"
-  document.getElementById("ng-timer-b").innerHTML = days + " " + getDaysString(days)
-  document.getElementById("ng-timer-c").innerHTML = hours + "ч " + minutes + "м " + seconds + "с ";
+  document.getElementById("ng-timer-b").innerHTML = hours + "ч " + minutes + "м " + seconds + "с ";
 
   function getDaysString(count) {
     // Приводим число к целому
@@ -42,6 +41,5 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("ng-timer-a").innerHTML = "";
     document.getElementById("ng-timer-b").innerHTML = "С новым годом!";
-    document.getElementById("ng-timer-c").innerHTML = "";
   }
 }, 250);
